@@ -644,7 +644,7 @@ button {
   flex-direction: column;
   align-items: center;
   background-color: rgb(229, 233, 235);
-  padding: 1.5rem 0 1rem 0;
+  padding: 1.5rem 0 0 0;
   font-weight: 300;
   font-size: 1.4rem;
   border-top: 0.1rem solid rgb(210, 214, 216);
@@ -678,6 +678,18 @@ button {
 .main-footer__social svg {
   width: 1.8rem;
   height: 1.8rem;
+}
+
+.main-footer__help {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgb(255, 167, 43);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .wc_comm_submit {

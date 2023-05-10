@@ -88,7 +88,7 @@ if($paged === 1) {
                             continue;
                         } else { 
                             ?>
-                            <?php get_template_part('template-parts/post', '', array('post' => $post, 'thumbnail-size' => 'medium')) ?>
+                            <?php get_template_part('template-parts/post', '', array('post' => $post, 'thumbnail-size' => 'medium', 'wrapper-class' => "mb-4 mb-sm-5")) ?>
                         <?php } ?>
                     <?php } ?>
                 <?php } else { ?>
