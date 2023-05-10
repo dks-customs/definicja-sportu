@@ -690,6 +690,7 @@ button {
   text-align: center;
   padding-left: 4rem;
   padding-right: 4rem;
+  letter-spacing: 0.05rem;
 }
 
 .wc_comm_submit {
@@ -855,11 +856,10 @@ button {
   .pop-header__categories {
     display: flex;
     align-items: center;
-    margin-left: 1.3rem;
   }
 
   .pop-header__categories > a {
-    margin-right: 1rem;
+    margin-left: 1.5rem;
     font-weight: 400;
     font-size: 1.4rem;
     letter-spacing: 0.05rem;
