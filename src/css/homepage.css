@@ -72,7 +72,7 @@
   }
 
   .homepage__hero .post__text p {
-    font-size: var(--font-size-p);
+    font-size: 1.5rem;
   }
 
   .homepage__hero .post__text .time-ago {

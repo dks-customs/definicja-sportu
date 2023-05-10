@@ -20,7 +20,7 @@ if($year_from == $year_to) {
                 Znajdź nas na&nbsp;<?php echo ds_inline_svg("facebook"); ?>
             </a>
             <div class="main-footer__legal">Definicja Sportu © <?php echo $year ?></div>
-            <div class="main-footer__help">Podoba Ci się to co robimy? Możesz wesprzeć nas na paypal: <b>pawma35@wp.pl</b></div>
+            <div class="main-footer__help">Podoba Ci się to co robimy? Możesz wesprzeć nas na PayPal: <b>pawma35@wp.pl</b></div>
         </footer>
         <div class="pop-header" id="pop-header">
             <div class="container">
