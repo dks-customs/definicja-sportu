@@ -682,9 +682,9 @@ button {
 
 .main-footer__help {
   margin-top: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: rgb(0, 123, 216);
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  background-color: rgb(0, 116, 205);
   color: white;
   width: 100%;
   text-align: center;
