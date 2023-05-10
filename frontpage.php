@@ -67,7 +67,7 @@ if($paged === 1) {
                 while ( have_posts() ) {
                     the_post(); ?>
                     <div class="homepage__feed__about">
-                        <h3>Kim jesteśmy?</h3>
+                        <h3>O nas</h3>
                         <?php the_content() ?>
                         <a href="<?php echo esc_attr(get_page_link(get_page_by_path("o-nas")))?>">Czytaj więcej&nbsp;&rarr;</a>
                         <a href="https://www.facebook.com/profile.php?id=100090609693608" target="__blank">Znajdź nas na&nbsp;<?php echo ds_inline_svg('facebook'); ?>&nbsp;&rarr;</a>                    

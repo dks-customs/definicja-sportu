@@ -442,6 +442,10 @@ button {
   z-index: 1000;
 }
 
+.pop-header.show {
+  margin-top: 0rem;
+}
+
 .pop-header .container {
   display: flex;
   align-items: center;
@@ -744,6 +748,12 @@ button {
   }
 }
 
+@media screen and (min-width: 601px) {
+  .pop-header.show.admin-bar {
+    margin-top: 4.6rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .main-header__top__logo {
     height: 12rem;
@@ -857,6 +867,12 @@ button {
     left: unset;
     margin-left: unset;
     margin-right: unset;
+  }
+}
+
+@media screen and (min-width: 783px) {
+  .pop-header.show.admin-bar {
+    margin-top: 3.2rem;
   }
 }
 

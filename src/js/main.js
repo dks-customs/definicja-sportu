@@ -71,12 +71,17 @@ const input = popSearchForm.querySelector("input");
 
 if (triggerPopSearch && popSearchForm && popHeader && input) {
   const showPopHeader = () => {
-    var y = window.scrollY;
+    const adminBar = document.getElementById("wpadminbar");
+    let y = window.scrollY;
+
+    if (adminBar) {
+      popHeader.classList.add("admin-bar");
+    }
 
     if (y >= 500) {
-      popHeader.style.marginTop = 0;
+      popHeader.classList.add("show");
     } else {
-      popHeader.style.marginTop = "-4rem";
+      popHeader.classList.remove("show");
       popSearchForm.style.display = "none";
       input.value = "";
     }
