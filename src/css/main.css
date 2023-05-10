@@ -564,10 +564,11 @@ button {
 
 .post__text > p {
   font-size: 1.4rem;
-  color: rgb(0, 0, 0);
+  color: rgb(67, 67, 67);
   font-weight: 400;
   margin-bottom: 1rem;
   letter-spacing: 0.03rem;
+  line-height: 1.4;
 }
 
 .post__text > .time-ago {
