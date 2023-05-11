@@ -26,6 +26,15 @@ if (cookiesConsent) {
   giveCookiesConsentBtn.addEventListener("click", () => {
     document.cookie =
       "ds-cookies-consent=given;path=/;expires=Thu, 11 Feb 2297 13:54:13 GMT";
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-4XTMS09KMT");
+
     cookiesConsent.remove();
   });
 

@@ -2,6 +2,7 @@
 add_action('after_setup_theme', 'ds_add_theme_supports');
 function ds_add_theme_supports() {
     add_theme_support('post-thumbnails');
+    add_post_type_support( 'page', 'excerpt' );
 }
 
 add_action('wp_enqueue_scripts', 'ds_enqueue_styles');
@@ -10,34 +11,14 @@ function ds_enqueue_styles() {
 
     if(!is_admin()) {
         wp_enqueue_style('ds-font', 'https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700;800;900&display=swap');
-        wp_enqueue_style('ds-main', get_stylesheet_directory_uri() . '/src/css/main.css', [], filemtime(get_stylesheet_directory() . '/src/css/main.css'));
-
-        $is_contact = is_page(19);
-        $is_about = is_page(2);
-
-        if(is_front_page()) {
-            wp_enqueue_style('ds-homepage', get_stylesheet_directory_uri() . '/src/css/homepage.css', [], filemtime(get_stylesheet_directory() . '/src/css/homepage.css'));
-        }
-
-        if(is_single() || $is_about || $is_contact) {
-            wp_enqueue_style('ds-single', get_stylesheet_directory_uri() . '/src/css/single.css', [], filemtime(get_stylesheet_directory() . '/src/css/single.css'));
-        }
-
-        if($is_contact) {
-            wp_enqueue_style('ds-contact', get_stylesheet_directory_uri() . '/src/css/contact.css', [], filemtime(get_stylesheet_directory() . '/src/css/contact.css'));
-        }
-
-        if($is_about) {
-            wp_enqueue_style('ds-about', get_stylesheet_directory_uri() . '/src/css/about.css', [], filemtime(get_stylesheet_directory() . '/src/css/about.css'));
-        }
+        wp_enqueue_style('ds-main', get_stylesheet_directory_uri() . '/dist/css/main.css', [], filemtime(get_stylesheet_directory() . '/src/css/main.css'));
     }
-
 }
 
 add_action('wp_enqueue_scripts', 'ds_enqueue_scripts');
 function ds_enqueue_scripts() {
     if(!is_admin()) {
-        wp_enqueue_script('main', get_stylesheet_directory_uri() . '/src/js/main.js', [], filemtime(get_stylesheet_directory() . '/src/js/main.js'), true);
+        wp_enqueue_script('main', get_stylesheet_directory_uri() . '/dist/js/main.js', [], filemtime(get_stylesheet_directory() . '/src/js/main.js'), true);
     }
 }
 

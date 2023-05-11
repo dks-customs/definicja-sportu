@@ -1,0 +1,8 @@
+js:
+npm build
+minify: https://www.toptal.com/developers/javascript-minifier
+
+css
+css variables: https://madlittlemods.github.io/postcss-css-variables/playground/
+autoprefixer: https://autoprefixer.github.io/
+minify: https://www.toptal.com/developers/cssminifier

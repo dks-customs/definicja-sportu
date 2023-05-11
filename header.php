@@ -34,7 +34,7 @@
     $ds_categories = $categories;
 
     if(is_front_page()) {
-        $title = $blog_name . " - " . $blog_description;
+        $title = get_the_title();
     } else if( is_category() && $wp_query->queried_object->name ) {
         $title = $wp_query->queried_object->name . " - " . $blog_name;
     } else {
@@ -69,6 +69,16 @@
         <?php } ?>
         <?php wp_head(); ?>
     </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4XTMS09KMT"></script>
+    <?php if(isset($_COOKIE["ds-cookies-consent"]) && $_COOKIE["ds-cookies-consent"] === 'given' ) { ?>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4XTMS09KMT');
+        </script>
+    <?php } ?>
 
     <body>
         <noscript class="no-javascript">
