@@ -1594,4 +1594,8 @@ blockquote::before {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
+
+  .homepage__feed__posts__title {
+    margin-top: 3rem;
+  }
 }
