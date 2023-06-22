@@ -81,6 +81,8 @@
 
         gtag('config', 'G-4XTMS09KMT');
         </script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6315861678595518"
+     crossorigin="anonymous"></script>
     <?php } ?>
 
     <body>
