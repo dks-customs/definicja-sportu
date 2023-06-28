@@ -1604,3 +1604,7 @@ blockquote::before {
     margin-top: 3rem;
   }
 }
+
+.wp-block-pullquote {
+  padding: 1rem;
+}
