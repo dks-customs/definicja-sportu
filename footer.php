@@ -56,7 +56,7 @@ if($year_from == $year_to) {
                     <p class="cookies-consent__title">Informacja o plikach cookies na tej witrynie</p>
                     <div class="cookies-consent__content">
                         <p class="cookies-consent__content__desc">
-                            Wykorzystujemy cookies do śledzenia liczby i danych o odwiedzających naszą stronę w Google Analytics. Jeśli nie chcesz udostępnić nam tych informacji i dalej korzystać ze strony kliknij "Nie zgadzam się". Jeśli kiedykolwiek zechcesz zmienić zdanie, wyczyść pliki cookies w przeglądarce lub dla tej strony a ten komunikat z możliwością wyboru pojawi się ponownie.
+                            Wykorzystujemy cookies do śledzenia liczby i danych o odwiedzających naszą stronę w Google Analytics oraz do wyświetlania spersonalizowanych reklam Google AdSense. Jeśli nie chcesz udostępnić nam tych informacji i dalej korzystać ze strony kliknij "Nie zgadzam się". Jeśli kiedykolwiek zechcesz zmienić zdanie, wyczyść pliki cookies w przeglądarce lub dla tej strony a ten komunikat z możliwością wyboru pojawi się ponownie.
                         </p>
                         <div class="cookies-consent__content__buttons">
                             <button id="decline-cookies-consent">Nie zgadzam się</button>
