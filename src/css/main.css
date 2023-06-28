@@ -1423,6 +1423,11 @@ blockquote::before {
     line-height: 1.55;
   }
 
+  .single__post__content .google-auto-placed {
+    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
   .single__post__content__tags > h6,
   .single__post__content__comments > h6 {
     font-size: var(--font-size-h5);
