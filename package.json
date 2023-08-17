@@ -5,6 +5,16 @@
     "@babel/preset-env": "^7.21.5"
   },
   "scripts": {
+    "sass": "sass --watch --no-source-map src/sass/main.scss dist/css/main.css",
+    "sass:build": "sass --no-source-map src/sass/main.scss dist/css/main.css --style compressed",
+    "css:prefix": "postcss dist/css/main.css --use autoprefixer --replace --no-map",
+    "css:build": "npm run sass:build && npm run css:prefix",
     "build": "babel src -d dist"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.65.1"
   }
 }
