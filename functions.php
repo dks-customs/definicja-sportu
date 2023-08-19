@@ -26,7 +26,7 @@ function ds_enqueue_styles() {
 
     if(!is_admin()) {
         wp_enqueue_style('ds-font', 'https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700;800;900&display=swap');
-        wp_enqueue_style('ds-main', get_stylesheet_directory_uri() . '/dist/css/main.css', [], filemtime(get_stylesheet_directory() . '/src/css/main.css'));
+        wp_enqueue_style('ds-main', get_stylesheet_directory_uri() . '/dist/css/main.css', [], filemtime(get_stylesheet_directory() . '/dist/css/main.css'));
 
         wp_dequeue_style( 'wp-block-library' );
         wp_dequeue_style( 'wp-block-library-theme' );
@@ -36,7 +36,7 @@ function ds_enqueue_styles() {
 add_action('wp_enqueue_scripts', 'ds_enqueue_scripts');
 function ds_enqueue_scripts() {
     if(!is_admin()) {
-        wp_enqueue_script('main', get_stylesheet_directory_uri() . '/dist/js/main.js', [], filemtime(get_stylesheet_directory() . '/src/js/main.js'), true);
+        wp_enqueue_script('main', get_stylesheet_directory_uri() . '/dist/js/main.js', [], filemtime(get_stylesheet_directory() . '/dist/js/main.js'), true);
     }
 }
 
