@@ -96,11 +96,18 @@ function ds_get_post_categories($post_id) {
     $cats_arr = wp_get_post_categories($post_id, array('fields' => 'all'));
     $cats     = "";
 
-    
     if( isset($cats_arr[0] )) {
         foreach($cats_arr as $cat) {
             $cats .= '<a href="' . home_url() . "/kategoria/" . $cat->slug .'">' . $cat->name . '</a>';
         }
+    } 
+
+    $comments_number = get_comments_number($post_id);
+
+    if( $comments_number > 0 ) {
+        $comments = '<a class="post-comments" href="' . get_the_permalink($post_id) . '#comments' . '">' . ds_inline_svg('comments') . $comments_number . '</a>';
+
+        return $comments . $cats;
     } 
 
     return $cats;

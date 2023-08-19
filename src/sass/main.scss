@@ -1532,7 +1532,7 @@ blockquote::before {
 
   .homepage__feed__about {
     min-width: calc(200rem / 16);
-    margin-top: calc(86rem / 16);
+    margin-top: calc(100rem / 16);
     padding: calc(15rem / 16) calc(20rem / 16);
     background-color: #e7ebee;
     border-radius: calc(4rem / 16);
@@ -1718,4 +1718,24 @@ label.wpforms-error {
 
 #wpforms-form-11-submit-btn-disabled {
   display: none;
+}
+
+.post-categories .post-comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  transition: background-color 0.1s linear;
+  border: calc(1rem / 16) solid black;
+}
+
+.post-categories .post-comments:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+.post-categories .post-comments svg {
+  width: calc(13rem / 16);
+  height: auto;
+  margin-right: calc(5rem / 16);
 }
